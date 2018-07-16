@@ -20,7 +20,7 @@ Run
     $ npm run start
 
 
-Testing
+Test
 -------
 
     $ npm run test

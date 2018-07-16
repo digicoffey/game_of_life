@@ -37,4 +37,4 @@ const gameOfLife = async (input, output) => {
 
 };
 
-export default game;
+export default gameOfLife;
