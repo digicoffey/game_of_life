@@ -21,10 +21,11 @@ const gameOfLife = async (input, output) => {
       const direction = await userInput(messages['instruction'], input, output);
       position = updatePlayerPosition(position, direction);
       const roomContains = await goldOrMonster(position);
-      if (roomContains === 'MONSTER') {
-        lives = updateStats(output, lives, true);
+      const isMonster = roomContains === 'MONSTER';
+      if (isMonster) {
+        lives = updateStats(output, lives, isMonster);
       } else {
-        gold = updateStats(output, gold, false);
+        gold = updateStats(output, gold, isMonster);
       };
 		} catch (err) {
       output.write(err);
