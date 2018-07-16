@@ -1,0 +1,6 @@
+*.log
+node_modules/
+.vscode/
+.npm
+.eslintcache
+.DS_Store

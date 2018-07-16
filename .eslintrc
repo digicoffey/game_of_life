@@ -1,0 +1,12 @@
+{
+  "env": {
+    "jest": true,
+    "node": true
+  },
+  "rules": {
+    "no-underscore-dangle": 0,
+    "max-len": 0,
+    "no-trailing-spaces": 1
+  },
+  "parser": "babel-eslint"
+}
