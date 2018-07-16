@@ -1,5 +1,5 @@
 import express from 'express';
-import router from './api/controllers/room';
+import router from './api';
 
 const app = express();
 
